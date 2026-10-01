@@ -201,12 +201,9 @@ Every call reads the brief and a few proposals, so the bill grows with the size 
 
 ## How it is built
 
-The Marketing Room is built on the pattern of Jake Schincariol's
-[arena skill](https://github.com/Jakeschincariol/arena-skill): an orchestrating `SKILL.md`, a stdlib-only
-Python state machine that keeps every bit of state in one JSON file, one generated brief per sub-agent, and
-sub-agents that write to disk and reply with one line, so the main session holds receipts, not work, and
-survives context compaction. The arena makes 100 copies of one answer fight in a bracket; the room seats
-different specialists around one brief and makes them collaborate and argue.
+The Marketing Room uses an orchestrating `SKILL.md` and a standard-library Python state machine that keeps
+session state in one JSON file. Each specialist receives a generated brief, writes its work to disk, and
+returns a short status. The main session keeps the results and can resume after context compaction.
 
 ```
 skills/marketing-room/SKILL.md                 the orchestration steps (Agent Skills format)
@@ -254,18 +251,6 @@ python3 -m unittest discover -s tests -v
 They run whole sessions (default, quick, deep, all seats, solo, with questions for the client, with failing
 outputs) with fake sub-agents, and check the lens dealer across every room size, the routing, every
 deterministic check, the ship gates in both directions, the revision cap, and the file formats.
-
-## Credits
-
-The orchestration pattern comes from [arena-skill](https://github.com/Jakeschincariol/arena-skill) by Jake
-Schincariol (MIT). Ideas borrowed, all content written fresh:
-[marketingskills](https://github.com/coreyhaines31/marketingskills) (a shared client context, a named dissenter,
-a disagreement map), [claude-skills](https://github.com/alirezarezvani/claude-skills) board meeting (isolated
-first contributions, verified and assumed tags), [claude-ads](https://github.com/AgriciDaniel/claude-ads)
-(claims with sources and dates, health separate from evidence),
-[agency-agents](https://github.com/msitarzewski/agency-agents) (a reality-checker gate that defaults to
-"needs work"), [Optmyzr's Google Ads audit](https://github.com/optmyzr-skills/google-ads-audit) and
-[claude-seo](https://github.com/AgriciDaniel/claude-seo) (concrete platform thresholds).
 
 ## License
 
