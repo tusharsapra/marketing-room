@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "about": "The lenses a seat wears when it challenges other seats. room.py deals one lens per seat per challenge round: never the seat's native lens, never one it already wore, cynical and client-eyes in every round, and the rest spread evenly. Every challenge must fill in the lens's test. Edit freely; keep ids unique.",
+  "mandatory": ["cynical", "client-eyes"],
+  "lenses": [
+    {
+      "id": "analytical",
+      "name": "Analytical",
+      "stance": "Only numbers that add up survive. Follow every figure back to the brief, the data or a stated assumption, and redo the arithmetic.",
+      "test": "The one number that must be true for this plan to work, where it comes from, and whether it holds."
+    },
+    {
+      "id": "cynical",
+      "name": "Cynical",
+      "stance": "Assume the plan is lying to itself. Look for the optimistic assumption, the missing owner, the step nobody has done before.",
+      "test": "The most likely way this fails in real life, and the earliest warning sign that it is failing."
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "stance": "Judge it as the client's CFO would. Revenue, margin, payback, CAC against LTV, and the cost of being wrong.",
+      "test": "What this does to the client's money: cost, return, payback, and what happens if it underdelivers by 30%."
+    },
+    {
+      "id": "operations",
+      "name": "Operations",
+      "stance": "Plans die in handoffs. Count hours, people, lead times, approvals and the order things must happen in.",
+      "test": "Who does it, how many hours, what it waits on, and the date it is really ready."
+    },
+    {
+      "id": "client-eyes",
+      "name": "Client eyes",
+      "stance": "Read it as the client's marketing director reading it cold, with their boss, their politics and their approval chain.",
+      "test": "What the client will push back on or refuse to sign, and what they will ask in the first meeting."
+    },
+    {
+      "id": "customer",
+      "name": "Customer",
+      "stance": "Be the person who sees the ad on their phone and has three seconds and no patience.",
+      "test": "The moment the end customer drops off or feels misled, from the ad to the page to the form."
+    },
+    {
+      "id": "brand",
+      "name": "Brand",
+      "stance": "Protect what the brand means in a year, not just this quarter's numbers. Consistency, distinctiveness, trust.",
+      "test": "Where this makes the brand look inconsistent, generic or cheap, and what that costs later."
+    },
+    {
+      "id": "risk-compliance",
+      "name": "Risk & compliance",
+      "stance": "Platform policy, privacy law, consent, claims, regulated categories, brand safety. Assume someone will check.",
+      "test": "The rule, policy or law this could break (name it), and what happens if it does: a rejected ad, a banned account, a fine."
+    },
+    {
+      "id": "competitive",
+      "name": "Competitive",
+      "stance": "The client is not alone in the auction. Think about who else bids, what they say and how they will react.",
+      "test": "What the strongest competitor does in response, and whether this plan still wins after that."
+    },
+    {
+      "id": "opportunity",
+      "name": "Opportunity",
+      "stance": "Look for the upside nobody has claimed: the cheaper channel, the reusable asset, the audience left out.",
+      "test": "The biggest upside this plan leaves on the table, with a rough size for it."
+    }
+  ]
+}

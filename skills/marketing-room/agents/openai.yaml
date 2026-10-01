@@ -1,0 +1,6 @@
+interface:
+  display_name: "The Marketing Room"
+  short_description: "An agency war room that debates a brief and ships one plan"
+  default_prompt: "Run the marketing room on this brief: "
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,20 @@
+{
+  "name": "marketing-room",
+  "version": "1.0.0",
+  "description": "The Marketing Room: an agency war room for any marketing brief. Specialist seats propose, challenge each other through dealt lenses, negotiate every conflict, and a Project Head ships one integrated plan.",
+  "author": {
+    "name": "Tushar Sapra"
+  },
+  "license": "MIT",
+  "keywords": ["marketing", "paid-media", "media-plan", "seo", "multi-agent", "agency"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "The Marketing Room",
+    "shortDescription": "An agency war room that debates a brief and ships one plan",
+    "longDescription": "Give it a client brief. A Project Head casts the specialist seats, each seat proposes on its own, they challenge each other through dealt lenses, a script checks budgets, learning phases, tracking and timelines, the seats negotiate, and the Project Head checks every requirement before shipping one integrated deliverable.",
+    "developerName": "Tushar Sapra",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": ["Run the marketing room on this brief.", "Get the whole agency on this campaign plan."]
+  }
+}

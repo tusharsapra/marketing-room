@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "as_of": "2026-10",
+  "about": "Thresholds behind room.py's deterministic checks. Each one has a source note and how firm it is: 'platform' means the platform documents it; 'practitioner' means it is common agency practice, not a platform rule. Platforms change these, so every check that uses them is a warning to verify, never a proof. A brief can override any value by stating its own. Amounts are USD; for other currencies room.py applies them as rough equivalents and says so.",
+  "learning": {
+    "meta": {
+      "events": 50,
+      "days": 7,
+      "unit": "ad set",
+      "firmness": "platform",
+      "source": "Meta Business Help Center: an ad set leaves the learning phase after about 50 optimization events in the 7 days after its last significant edit."
+    },
+    "tiktok": {
+      "events": 50,
+      "days": 7,
+      "unit": "ad group",
+      "firmness": "platform",
+      "source": "TikTok Ads Manager guidance: about 50 conversions per ad group within 7 days to exit learning."
+    },
+    "google": {
+      "events": 30,
+      "days": 30,
+      "unit": "campaign",
+      "firmness": "practitioner",
+      "source": "Google Ads Smart Bidding guidance and common practice: about 30 conversions in 30 days per campaign for Target CPA to work reliably; Target ROAS wants more."
+    }
+  },
+  "min_daily": {
+    "linkedin": {
+      "amount": 10,
+      "unit": "campaign",
+      "firmness": "platform",
+      "source": "LinkedIn Campaign Manager minimum daily budget of 10 USD per campaign."
+    },
+    "tiktok": {
+      "amount": 20,
+      "unit": "ad group",
+      "firmness": "platform",
+      "source": "TikTok Ads Manager minimum daily budget of 20 USD per ad group (50 USD per campaign)."
+    }
+  },
+  "creatives": {
+    "meta": {
+      "min_per_unit": 3,
+      "unit": "ad set",
+      "refresh_days": 21,
+      "firmness": "practitioner",
+      "source": "Common Meta practice: 3 to 6 creatives per ad set, refreshed every 2 to 4 weeks as frequency climbs and performance fatigues."
+    },
+    "tiktok": {
+      "min_per_unit": 3,
+      "unit": "ad group",
+      "refresh_days": 14,
+      "firmness": "practitioner",
+      "source": "Common TikTok practice: at least 3 creatives per ad group, refreshed every 1 to 2 weeks because fatigue is fast."
+    },
+    "linkedin": {
+      "min_per_unit": 2,
+      "unit": "campaign",
+      "refresh_days": 42,
+      "firmness": "practitioner",
+      "source": "Common LinkedIn practice: 2 to 4 ads per campaign, refreshed every 4 to 6 weeks."
+    },
+    "youtube": {
+      "min_per_unit": 2,
+      "unit": "campaign",
+      "refresh_days": 42,
+      "firmness": "practitioner",
+      "source": "Common YouTube practice: at least 2 video cuts per campaign (for example a 6s bumper and a 15 to 30s cut)."
+    }
+  },
+  "unallocated_warning_pct": 15,
+  "over_budget_tolerance_pct": 2,
+  "percent_mode_tolerance_pct": 2
+}

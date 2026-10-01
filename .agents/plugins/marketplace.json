@@ -1,0 +1,20 @@
+{
+  "name": "marketing-room",
+  "interface": {
+    "displayName": "The Marketing Room"
+  },
+  "plugins": [
+    {
+      "name": "marketing-room",
+      "source": {
+        "source": "url",
+        "url": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

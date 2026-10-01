@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "marketing-room",
+  "description": "The Marketing Room skill",
+  "owner": {
+    "name": "Tushar Sapra"
+  },
+  "plugins": [
+    {
+      "name": "marketing-room",
+      "description": "An agency war room for any marketing brief: specialist seats propose, challenge each other through dealt lenses, negotiate, and a Project Head ships one integrated plan.",
+      "version": "1.0.0",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

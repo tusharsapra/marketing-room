@@ -1,0 +1,10 @@
+{
+  "name": "marketing-room",
+  "description": "The Marketing Room: an agency war room for any marketing brief. Specialist seats (paid search, paid social, SEO, UX, UI, dev, creative, measurement, client lead and more) propose, challenge each other through dealt lenses, negotiate every conflict, and a Project Head ships one integrated plan.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tushar Sapra"
+  },
+  "license": "MIT",
+  "keywords": ["marketing", "paid-media", "media-plan", "google-ads", "meta-ads", "linkedin-ads", "seo", "multi-agent", "subagents", "agency"]
+}
